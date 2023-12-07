@@ -25,16 +25,19 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 streamlit.dataframe(fruits_to_show)
 #streamlit.dataframe(my_fruit_list)
 
-import requests
-# -- fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")--  COMMENTED FOR RUN NEXT LINE SAME BUT CAN ACCESS UNIQUE FRUIT FROM API
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+ "KIWI")
-#streamlit.text(fruityvice_response.json())
 
 #--to format data in table (json to table)
 streamlit.header('FRUITYVICE FRUIT ADVICE !')
 
 fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
 streamlit.write('The user entered ', fruit_choice)
+
+import requests
+# -- fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")--  COMMENTED FOR RUN NEXT LINE SAME BUT CAN ACCESS UNIQUE FRUIT FROM API
+#fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+ "KIWI")
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+ fruit_choice)
+#streamlit.text(fruityvice_response.json())
+
 
 # write your own comment -what does the next line do? 
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
