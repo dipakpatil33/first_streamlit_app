@@ -27,7 +27,7 @@ streamlit.dataframe(fruits_to_show)
 #streamlit.dataframe(my_fruit_list)
 
 
-'''     ---commented multiline for exception handleing to show error
+"""    ---commented multiline for exception handleing to show error
 #--to format data in table (json to table)
 streamlit.header('FRUITYVICE FRUIT ADVICE !')
 
@@ -46,7 +46,8 @@ fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # write your own comment - what does this do?
 streamlit.dataframe(fruityvice_normalized)
 
-'''   #--upto this its commeented           
+""" 
+#--upto this its commeented           
 
    # --new code for      --for select value in textbox   ***
 streamlit.header('FRUITYVICE FRUIT ADVICE !')
