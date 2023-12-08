@@ -56,6 +56,8 @@ my_cur = my_cnx.cursor()
 
 #  --my_cur.execute("SELECT CURRENT_USER(), CURRENT_ACCOUNT(), CURRENT_REGION()") --
 my_cur.execute("SELECT * from fruit_load_list")
+my_cur.execute("insert into PC_RIVERY_DB.PUBLIC.FRUIT_LOAD_LIST values ('from streamlit')")  # test pusrpose will give error >> data inserted from streamlit to sf
+
 
 #my_data_row = my_cur.fetchone()   --will retrieve only one row 
 my_data_rows = my_cur.fetchall()
