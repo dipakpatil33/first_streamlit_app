@@ -81,9 +81,10 @@ streamlit.write('Thanks For Adding ', add_my_fruit)
 
 
 
+'''
+#-----------------
 
------------------
-"""    ---commented multiline for exception handleing to show error
+---commented multiline for exception handleing to show error
 #--to format data in table (json to table)
 streamlit.header('FRUITYVICE FRUIT ADVICE !')
 
@@ -102,5 +103,6 @@ fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # write your own comment - what does this do?
 streamlit.dataframe(fruityvice_normalized)
 
-""" 
--------------------
+
+#-------------------
+'''
