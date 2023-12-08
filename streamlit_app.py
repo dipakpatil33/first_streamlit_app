@@ -66,7 +66,7 @@ import snowflake.connector
 
 
 #my_data_row = my_cur.fetchone()   --will retrieve only one row 
-my_data_rows = my_cur.fetchall()
+#my_data_rows = my_cur.fetchall()
 #streamlit.text("Hello from Snowflake:")
 #streamlit.text("The Fruit Load List Contains: ")
 #streamlit.header("The Fruit Load List Contains: ")
