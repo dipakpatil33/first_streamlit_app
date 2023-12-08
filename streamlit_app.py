@@ -50,6 +50,7 @@ streamlit.dataframe(fruityvice_normalized)
 #--upto this its commeented           
 
    # --new code for      --for select value in textbox   ***
+import requests
 streamlit.header('FRUITYVICE FRUIT ADVICE !')
 try:
   fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
