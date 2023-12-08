@@ -46,6 +46,7 @@ streamlit.dataframe(fruityvice_normalized)
 
 
 
+streamlit.stop()  # it will will stop to implement from here
 
 #---  snowflake connectivity 
 
